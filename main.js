@@ -58,6 +58,6 @@ const server = http.createServer(async (req, res) => {
   }
 })
 server.listen(PORT, HOST, () => {
-  console.log(` Сервер запущено на http://${HOST}:${PORT}`);
+  console.log(`Сервер запущено на http://${HOST}:${PORT}`);
   console.log(`Використовується файл: ${INPUT_FILE}`);
 });
