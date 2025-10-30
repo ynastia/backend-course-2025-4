@@ -4,7 +4,8 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev" : "nodemon main.js -i ./weather-2.json -h 127.0.0.1 -p 3000"
   },
   "repository": {
     "type": "git",
