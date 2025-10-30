@@ -8,8 +8,8 @@ program
   .name('api-server')
   .description('Запуск веб-сервера з обов’язковими параметрами: шлях до файлу, хост та порт.')
   .requiredOption('-i, --input <path>', 'Шлях до вхідного JSON файлу')
-  .requiredOption('-h, --host <address>', 'Адреса сервера (наприклад, 127.0.0.1)')
-  .requiredOption('-p, --port <number>', 'Порт сервера (наприклад, 3000)', val => parseInt(val, 10));
+  .requiredOption('-h, --host <address>', 'Адреса сервера')
+  .requiredOption('-p, --port <number>', 'Порт сервера ', val => parseInt(val, 10));
 program.parse(process.argv);
 const options = program.opts();
 
